@@ -4,42 +4,39 @@ Spyder Editor
 
 by Haitong Wang
 """
+import matplotlib.pyplot 
+import operator
 import random
 
-# Set up variables.
-y0 = 50
-x0 = 50
+num_of_agents = 10
+num_of_iterations = 100
+agents = []
 
-# Random walk one step.
-if random.random() < 0.5:
-    y0 += 1
-else:
-    y0 -= 1
-     
-if random.random() < 0.5:
-    x0 += 1
-else:
-    x0 -= 1 
-        
-print (y0,x0) 
+# Set up first pair of variables.
+for i in range(num_of_agents):
+    agents.append([random.randint(0,99),random.randint(0,99)])
 
+# Random walk one step.(y0,x0)
 
-# Set up another variables.
-y1 = 50
-x1 = 50
+if random.random() < 0.5:
+    agents[i][0] = (agents[i][0] + 1) % 100
+else:
+    agents[i][0] = (agents[i][0] - 1) % 100
 
-# Random walk one step.
-if random.random() < 0.5:
-    y1 += 1
-else:
-    y1 -= 1
-     
-if random.random() < 0.5:
-    x1 += 1
-else:
-    x1 -= 1 
  
-print (y1,x1)
+if random.random() < 0.5:
+    agents[i][1] = (agents[i][1] + 1) % 100
+else:
+    agents[i][1] = (agents[i][1] + 1) % 100 
+        
+print (agents) 
 
-distance = ((y1-y0)**2 + (x1-x0)**2)**0.5 
-print (distance)
+
+print (max(agents, key=operator.itemgetter(1)))
+
+matplotlib.pyplot.ylim(0, 99)
+matplotlib.pyplot.xlim(0, 99)
+for i in range(num_of_agents):
+    matplotlib.pyplot.scatter(agents[i][1],agents[i][0])
+
+matplotlib.pyplot.show()
