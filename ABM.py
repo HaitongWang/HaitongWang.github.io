@@ -30,14 +30,14 @@ agents = []
 
 # Set up agents.
 for i in range(num_of_agents):
-    agents.append(agentframework.Agent(environment))
+    agents.append(agentframework.Agent())
 
 # Random walk agents.(y0,x0)
 for j in range(num_of_iterations):
     for i in range(num_of_agents):
         
         agents[i].move()
-        agents[i].eat()
+       
       
 print (agents) 
 
@@ -52,7 +52,7 @@ print(distance)
 
 matplotlib.pyplot.ylim(0, 99)
 matplotlib.pyplot.xlim(0, 99)
-matplotlib.pyplot.imshow(environment)
+
 for i in range(num_of_agents):
     matplotlib.pyplot.scatter(agents[i].x,agents[i].y)
 matplotlib.pyplot.show()

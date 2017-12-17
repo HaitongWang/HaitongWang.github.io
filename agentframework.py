@@ -9,11 +9,10 @@ import random
 
 class Agent:
         
-    def __init__(self,x,y,environment,store):
+    def __init__(self):
         self.x = random.randint(0,99)
         self.y = random.randint(0,99)   
-        self.environment = environment
-        self.store = 0
+      
  
     def move (self):
         if random.random() < 0.5:
@@ -26,10 +25,7 @@ class Agent:
         else:
             self.y = (int(self.y) + 1) % 100 
             
-    def eat(self):
-        if self.environment[self.y][self.x] > 10:
-            self.environment[self.y][self.x] -= 10
-            self.store += 10
+    
         
 
 def distance_between(agent0:Agent, agent1:Agent): 
