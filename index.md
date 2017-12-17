@@ -22,4 +22,4 @@ I tried to complete the next few steps, but I can not link the afentframework wi
     
 For GUI, I can just get an empty tkinter with menu bar.
   
-Finally, I know I will get no mark on this assessment, but I will try to fix all these problems and get the agent-based model during the holiday. 
+Finally, I know I will get no mark on this assessment, but I will try to fix all these problems and get the agent-based model and assessment 2 during the holiday. 
