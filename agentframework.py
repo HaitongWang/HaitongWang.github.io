@@ -9,7 +9,7 @@ import random
 
 class Agent:
         
-    def __init__ (self,environment, store):
+    def __init__(self,x,y,environment,store):
         self.x = random.randint(0,99)
         self.y = random.randint(0,99)   
         self.environment = environment

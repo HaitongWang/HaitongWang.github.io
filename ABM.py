@@ -14,14 +14,12 @@ f = open('in.txt', newline='')
 reader = csv.reader(f, quoting=csv.QUOTE_NONNUMERIC)
 
 environment = []  #Lines here happen before any data is processed
-
 for row in reader:
     rowlist = []  #Lines here happen before each row is processed
     for values in row:
         rowlist.append(values)  #do something with values
-environment.append(rowlist)  #Lines here happen after row is processed
-
-      
+    environment.append(rowlist)  #Lines here happen after row is processed
+f.close()      
 
 def distance_between(agent0, agent1): 
     return (((agent0.x - agent1.x)**2) + ((agent0.y - agent1.y)**2))**0.5
