@@ -10,4 +10,4 @@ Although I have been learning Python for a whole semester, I still can not get t
   
 My python code stays in creating an **Agent**(agentframework.py) to convert the code into an object oriented version.  
 What can I get is like the picture:  
-![a](http://github.com/HaitongWang/haitongwang.github.io/a.png)
+![a.png](http://github.com/HaitongWang/haitongwang.github.io/a.png)
