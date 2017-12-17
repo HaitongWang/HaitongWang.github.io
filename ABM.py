@@ -25,7 +25,8 @@ for j in range(num_of_iterations):
     for i in range(num_of_agents):
         
         agents[i].move()
-        
+
+      
 print (agents) 
 
 
@@ -40,5 +41,5 @@ for i in range(num_of_agents):
 matplotlib.pyplot.show()
 
 
-a = agentframework.Agent()
+a = agentframework.Agent()  
 print(a.y, a.x)
