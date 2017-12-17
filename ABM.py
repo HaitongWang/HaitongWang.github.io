@@ -29,7 +29,6 @@ for j in range(num_of_iterations):
 print (agents) 
 
 
-print (max(agents, key=operator.itemgetter(1)))
 
 distance = distance_between(agents[0], agents[1])
 print(distance)
