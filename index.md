@@ -8,7 +8,8 @@ This is my first time to use the Github.
   
 Although I have been learning Python for a whole semester, I still can not get the final agent-based model.   
   
-In this **Repository**, I only have **"ABM.py"**[ABM.py](http://github.com/HaitongWang/HaitongWang.github.io/raw/master/ABM.py),**"agentframework.py"**.
+In this **Repository**, I only have **"ABM.py"**[the code](http://github.com/HaitongWang/HaitongWang.github.io/raw/master/ABM.py)   
+**"agentframework.py"**[the code](http://github.com/HaitongWang/HaitongWang.github.io/raw/master/agentframework.py).
   
 My python code stays in creating an **Agent**(agentframework.py) to convert the code into an object oriented version.  
   
